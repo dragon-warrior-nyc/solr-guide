@@ -3,63 +3,21 @@
 ## Deleting document by ID
 
 ```
-DELETE /product/_doc/1
-```
-
-## Adding test documents
-
-Creat the `product` index
-```
-DELETE /product
-PUT /product?pretty
-```
-
-Index two documents into `product`:
-```
-POST /product/_doc
-{
-  "name": "Processing Events with Logstash",
-  "category": "course"
-}
-```
-
-```
-POST /product/_doc
-{
-  "name": "The Art of Scalability",
-  "category": "book"
-}
-```
-
-```
-GET /product/_doc/_search
-{
-    "query": {
-        "match_all": {}
-    }
-}
+bin/post -c my_first_solr_core delete.xml 
 ```
 
 ## Deleting documents by query
 
-Delete all documents falling into the category of `book`
+Delete documents satisfying certain criterion
 ```
-POST /product/_delete_by_query
-{
-  "query": {
-    "match": {
-      "category": "book"
-    }
-  }
-}
+<delete> 
+   <query>city:Chennai</query> 
+</delete>
 ```
 
-As a result, only one document is left in `product` index:
+Delete all documents
 ```
-GET /product/_doc/_search
-{
-    "query": {
-        "match_all": {}
-    }
-}
+<delete> 
+   <query>*:*</query> 
+</delete>
 ```
