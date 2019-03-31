@@ -1,0 +1,23 @@
+[ 
+   { 
+      "id" : "001", 
+      "name" : "Ram", 
+      "age" : 53, 
+      "Designation" : "Manager", 
+      "Location" : "Hyderabad", 
+   }, 
+   { 
+      "id" : "002", 
+      "name" : "Robert", 
+      "age" : 43, 
+      "Designation" : "SR.Programmer", 
+      "Location" : "Chennai", 
+   }, 
+   { 
+      "id" : "003", 
+      "name" : "Rahim", 
+      "age" : 25, 
+      "Designation" : "JR.Programmer", 
+      "Location" : "Delhi", 
+   } 
+] 
