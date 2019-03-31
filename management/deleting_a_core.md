@@ -1,3 +1,3 @@
 ```
-bin/solr delete -c my_second_solr_core
+bin/solr delete -c my_first_solr_core
 ```
