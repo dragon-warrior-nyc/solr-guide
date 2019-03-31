@@ -1,0 +1,9 @@
+Index documents in sample.csv to my_first_solr_core:
+```
+bin/post -c my_first_solr_core sample.csv 
+```
+
+View the documents from the index:
+```
+http://localhost:8983/solr/my_first_solr_core/select?q=*:*
+```
