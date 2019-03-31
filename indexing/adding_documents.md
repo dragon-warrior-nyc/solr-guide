@@ -2,6 +2,12 @@ Index documents in sample.csv to my_first_solr_core:
 ```
 bin/post -c my_first_solr_core sample.csv 
 ```
+```
+bin/post -c my_first_solr_core sample.json 
+```
+```
+bin/post -c my_first_solr_core sample.xml 
+```
 
 View the documents from the index:
 ```
