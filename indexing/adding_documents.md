@@ -1,4 +1,4 @@
-Index documents in sample.csv to my_first_solr_core:
+Index documents in sample.csv/sample.json/sample.xml to my_first_solr_core:
 ```
 bin/post -c my_first_solr_core sample.csv 
 ```
